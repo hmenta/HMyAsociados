@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+* {
+  font-family: "Ubuntu";
+  text-align: justify;
+}
+
+h1 {
+  color: lightslategrey;
+  font-weight: bold;
+  padding-top: 25px;
+  padding-left: 10px;
+  font-size: xx-large;
+}
+
+h4,
+h6 {
+  text-align: center;
+  font-weight: bold;
+
+}
+
+h5 {
+  text-align: left;
+  font-size: medium;
+  font-weight: bold;
+  
+}
+
+.titulo-logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: larger;
+  color: cyan;
+  justify-content: left;
+  padding: 20 px;
+  margin-top: 20px;
+  
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: grey;
+  padding: 20px;
+  justify-content: space-around;
+  color: white;
+  font-weight: bold;
+  border-end-end-radius: 50px;
+  border-end-start-radius: 50px;
+  margin-bottom: 5px;
+}
+
+#menu-nav {
+  color: white;
+  font-weight: bold;
+  text-decoration-line: none;
+  padding: 20px;
+}
+
+#menu-nav:hover {
+  background-color: lightskyblue;
+  color: black;
+  padding: 20px;
+}
+
+.banner-bienvenida {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.8;
+  position: relative;
+}
+
+.imagen-bienvenida {
+  background-image: url("img/inicio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40rem;
+  padding-top: 5px;
+}
+
+.imagen-bienvenida-cursos {
+  background-image: url("img/propuesta.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  padding-top: 5px;
+}
+
+.imagen-bienvenida-nosotros {
+  background-image: url("img/Nosotros.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  padding-top: 5px;
+}
+
+/* en estas clases, cambiar formatos del texto en los puntos de corte */
+
+.texto-bienvenida {
+  background-color: goldenrod;
+  padding: 20px;
+  margin-top: 160px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  position: sticky;
+  top: 100px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.contenedor-grid {
+  display: grid;
+  padding-top: 10px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+   
+}
+
+.item-grid {
+  padding: 10px;
+  background-color: lightgray;
+  
+}
+
+.contenedor-grid-nosotros {
+  display: grid;
+  padding-top: 10px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+   
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: lightsteelblue;
+  padding: 20px;
+  font-weight: bold;
+  color: black;
+  margin: 2px;
+  border-color: grey;
+} 
+
+#contenido-titulo {
+  flex-direction: column;
+  
+  padding: 20px;
+  border-color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: black;
+  text-align: left;
+}
+
+#contenido {
+  margin: 25px;
+  flex-direction: column;
+  border-color: white;
+  
+}
+
+.contenedor-cards { /*Estilo de clase de la pagina cursos*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.pie-de-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: left;
+  background-color: lightslategray;
+  font-weight: bold;
+  color: white;
+  margin: 2px;
+  border-color: grey;
+  padding: 20px;
+}
+
+#redes-sociales {
+  justify-content: left;
+  padding: 20px;
+
+}
+
+.iconos-social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: large;
+  text-align: center;
+  
+}
+
+.botones-footer {
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+
+}
+
+.button:hover {
+  background-color: lightskyblue;
+  color: black;
+}
+
+/* Estilos de cards en pagina Cursos */
+.card-img-top {
+  width: 18rem;
+  height: 15rem;
+  
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  text-align: left;
+}
+
+/* Estilos formulario */
+
+.col-auto {
+  text-align: center;
+}
+
+/* Falta toquetear puntos de corte */
+
+/* @media (max-width: 767px) {
+  #menu {
+    display: flex;
+    flex-direction: column;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    justify-items: stretch;
+    column-gap: 5px;
+    row-gap: 5px;
+    width: 100%;
+  }
+  .menuitem {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 479px){
+  .nav{ 
+    flex-direction: column;
+   
+  }
+  .menuitem {
+    max-width: calc(90% / 4);
+  }
+  
+  .iconos-social {
+  padding: ;  
+  
+.contenedor-cards {
+  gap: 20px;
+}
+
+  } */
