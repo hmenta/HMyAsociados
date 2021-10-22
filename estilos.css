@@ -37,7 +37,7 @@ h5 {
   flex-direction: row;
   font-size: larger;
   color: cyan;
-  justify-content: left;
+  justify-content: center;
   padding: 20 px;
   margin-top: 20px;
   
@@ -135,8 +135,8 @@ h5 {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-   
+  grid-template-rows: auto 1fr;
+  
 }
 
 .item-grid {
@@ -150,7 +150,7 @@ h5 {
   padding-top: 10px;
 
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
    
 }
 
@@ -168,12 +168,12 @@ h5 {
 
 #contenido-titulo {
   flex-direction: column;
-  
   padding: 20px;
   border-color: white;
   font-weight: bolder;
   font-size: 1.5rem;
   color: black;
+  margin-top: 15px;
   text-align: left;
 }
 
