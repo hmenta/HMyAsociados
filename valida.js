@@ -5,7 +5,7 @@ function iniciar() {
 }
 
 function valida_nombre() {
-  var elemento = document.getElementById('text');
+  var elemento = document.getElementById('input-group-text');
   if (elemento.value == '') {
     alert('El campo nombre no puede estar vacío');
     return false;
@@ -14,7 +14,7 @@ function valida_nombre() {
 }
 
 function valida_mail() {
-    var elemento = document.getElementById('email');
+    var elemento = document.getElementById('exampleFormControlInput1');
     if (elemento.value !== '@') {
       alert('Debe proporcionar un e-mail válido');
       return false;
