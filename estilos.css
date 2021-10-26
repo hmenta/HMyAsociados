@@ -279,6 +279,14 @@ h5 {
   margin-top: 20px;
   }
 
+.contenedor-grid {
+    display: grid;
+    grid-auto-flow: column;
+    padding-top: 10px;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto 1fr;
+      
+  }
   
 }
 
@@ -327,7 +335,10 @@ h5 {
     flex-direction: column;
     align-content: center;
     }
-
+    
+    #contenido {
+      text-align: left;
+    }
     .contenedor-cards {
       gap: 10px;
     }
@@ -352,6 +363,7 @@ h5 {
         
     } */
 
+    .contenedor-grid,
     .contenedor-grid-nosotros {
       display: grid;
       grid-auto-flow: column;
