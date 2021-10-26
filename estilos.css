@@ -266,7 +266,7 @@ h5 {
 
 /* Falta toquetear puntos de corte */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   
   .titulo-logo {
   display: flex;
@@ -274,21 +274,22 @@ h5 {
   flex-direction: row;
   font-size: larger;
   color: cyan;
-  justify-content: left;
-  padding: 20 px;
+  justify-content: center;
+  padding: 20px;
   margin-top: 20px;
   }
 
   
 }
 
-@media (max-width: 479px), (max-width: 641px){
+@media (min-width: 240px) and (max-width: 640px){
     .nav{ 
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-content: center;
       padding: 10px;
+      gap: 20px;
     }
 
     .titulo-logo {
@@ -314,7 +315,7 @@ h5 {
       position: sticky;
       text-align: center;
       color: black;
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: bold;
       letter-spacing: 10px;
       text-transform: uppercase;
@@ -341,13 +342,24 @@ h5 {
       gap: 10px;
     }
 
-    .item-grid {
+    /* .item-grid {
       display: grid;
+      grid-auto-columns: min-content;
       padding-top: 10px;
     
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr;
         
+    } */
+
+    .contenedor-grid-nosotros {
+      display: grid;
+      grid-auto-flow: column;
+      padding-top: 10px;
+    
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+       
     }
 
 }
