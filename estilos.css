@@ -283,8 +283,8 @@ h5 {
     display: grid;
     grid-auto-flow: column;
     padding-top: 10px;
-    grid-template-columns: 2fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
       
   }
   
@@ -363,7 +363,16 @@ h5 {
         
     } */
 
-    .contenedor-grid,
+    .contenedor-grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-top: 10px;
+      gap: 5px;
+    
+  
+    }
+
     .contenedor-grid-nosotros {
       display: grid;
       grid-auto-flow: column;
