@@ -5,8 +5,8 @@ function iniciar() {
 }
 
 function valida_nombre() {
-  var nombre = document.getElementById('input-group-text');
-  if (nombre.value == '') {
+  var nombreform = document.getElementById('nombre');
+  if (nombreform.value == '') {
     alert('El campo nombre no puede estar vacío');
     return false;
   }
@@ -14,8 +14,8 @@ function valida_nombre() {
 }
 
 function valida_mail() {
-    var email = document.getElementById('exampleFormControlInput1');
-    if (email.value !== '@') {
+    var emailform = document.getElementById('email');
+    if (emailform.value !== '@') {
       alert('Debe proporcionar un e-mail válido');
       return false;
     }
@@ -23,7 +23,7 @@ function valida_mail() {
   }
 
 
-function validate(e) {
+function validate() {
     if (valida_nombre() && valida_mail() &&confirm('Pulse aceptar si desea enviar el form')){
       return true;
     }

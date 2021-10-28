@@ -268,8 +268,8 @@ h5 {
 
 #form {
   border:1px solid white;
-
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 #form legend{
   font-weight:bold;
@@ -287,7 +287,7 @@ h5 {
   float:left;
   text-align:left;
 }
-#form input[type=text] {
+#form input {
   border:1px solid whitesmoke;
 }
 #form input[type="submit"] {
