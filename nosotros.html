@@ -46,10 +46,41 @@
     <div class="contenedor-grid-nosotros">
         
         <div class="item-grid" id="item1">
+            
             <h3>Contáctanos</h3>
             <br>
             
-            <form>
+            <form action="mailto:hmenta@outlook.com?subject='Consulta desde la web'" method="post" enctype="text/plain">
+    
+                <fieldset id="form">
+               
+                <ol>
+                <li><label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" size="40" maxlength="5" placeholder="Ingrese aquí su nombre" /><br>
+                </li>
+
+                <li>
+                <label for="email">Email:</label>
+                <input type="email" name="email" size="40" placeholder="alguien@algunaparte.com" /><br>
+                </li>
+
+                <li>
+                <input type="checkbox" name="Programas">Deseo más información sobre los programas.<br>
+                <input type="checkbox" name="Precios" />Deseo más información sobre precios.
+                </li>
+
+                <li><input type="text" name="CuadroConsultas" size="40" maxlength="500" placeholder="Ingrese aquí su consulta"></li>
+
+                </ol>
+                
+                <br><br><br>
+                <p style="text-align: center"> <input type="submit" name="submit" value="Enviar"> </p> 
+                        
+                </form>
+            
+
+            <!--OPCION FORMULARIO DE BOOSTRAP SIN VALIDACION 
+                <form>
                 <div class="input-group">
                     <span class="input-group-text">Tu nombre</span>
                     <input type="text" aria-label="First name" name="nombre" class="form-control">
@@ -85,10 +116,11 @@
                 <div class="col-auto">
                     <button type="submit" class="btn btn-primary">Enviar</button>
                         <form action="mailto:hmenta@outlook.com ?subject='Consulta desde la Web'" method="post" enctype="text/plain"></form>
-                    </form>
+                    </form> 
+
                   </div>
 
-            </form>
+            </form> -->
         </div>
         
         <div class="item-grid" id="item2">

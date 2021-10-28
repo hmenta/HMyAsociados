@@ -264,6 +264,41 @@ h5 {
   text-align: center;
 }
 
+/* Estilos del formulario */
+
+#form {
+  border:1px solid white;
+
+  margin: 20px;
+}
+#form legend{
+  font-weight:bold;
+  font-size:12px;
+}
+#form ol{
+  list-style:none;
+}
+#form ol li{
+  padding-bottom:5px;
+  
+}
+#form ol li label{
+  width: 50%;
+  float:left;
+  text-align:left;
+}
+#form input[type=text] {
+  border:1px solid whitesmoke;
+}
+#form input[type="submit"] {
+  padding:5px;
+  color: white;
+  background-color: blue;
+  border:1px;
+  text-align: center;
+}
+
+
 /* Falta toquetear puntos de corte */
 
 @media (max-width: 768px) {
