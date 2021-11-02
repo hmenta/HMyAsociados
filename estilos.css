@@ -40,7 +40,7 @@ h5 {
   justify-content: left;
   padding: 20 px;
   margin-top: 20px;
-  
+  align-content: center;
 }
 
 .nav {
@@ -187,7 +187,14 @@ h5 {
   flex-direction: row;
   flex-wrap: wrap;
   border-color: white;
-  }
+  list-style-type: none;
+ 
+}
+
+ul li {
+  list-style-type: none;
+  text-align: left;
+}
 
 .contenedor-cards { /*Estilo de clase de la pagina cursos*/
   display: flex;
@@ -276,7 +283,7 @@ h5 {
   padding: 10px;
   margin: 10px;
 }
-/* #form legend{  //para el caso de tener que utilizarlo// 
+/* #form legend{  //para el caso de querer utilizarlo// 
   font-weight:bold;
   font-size:12px; 
 }
@@ -307,7 +314,7 @@ h5 {
 }
 
 
-/* Falta toquetear puntos de corte */
+/* Puntos de corte responsive Mobile y Tablet */
 
 @media (min-width: 641px) and (max-width: 768px) {
   
@@ -323,13 +330,30 @@ h5 {
   }
 
 .contenedor-grid {
-    display: grid;
-    grid-auto-flow: column;
-    padding-top: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-      
-  }
+  display: grid;
+  padding-top: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 5px;
+
+}
+
+.item-grid {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+#item1,
+#item2,
+#item3,
+#item4 {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+ 
+}
+
   
 }
 
@@ -372,6 +396,73 @@ h5 {
       letter-spacing: 10px;
       text-transform: uppercase;
     }
+       
+    #contenido {
+      text-align: left;
+      list-style: none;
+
+    }
+
+    .contenedor-cards {
+      gap: 10px;
+    }
+
+     .contenedor-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      /* display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; */
+      padding-top: 10px;
+      gap: 5px;
+    
+    }
+
+    .contenedor-grid-nosotros {
+      display: grid;
+      grid-auto-flow: column;
+      padding-top: 10px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+       
+    }
+
+    .item-grid {
+      align-content: center;
+      justify-items: center;
+      text-align: center;
+    }
+ 
+    #item1,
+    #item2,
+    #item3,
+    #item4 {
+      align-content: center;
+      justify-items: center;
+      text-align: center;
+     
+    }
+
+    #form ol li label{
+      width: 30%;
+      float:left;
+      text-align:left;
+    }
+
+    /* #item1 {
+
+    } Corresponde al formulario HTML */
+      
+    
+  
+    /* #item2 { /* Corresponde al iframe de GoogleMaps
+      width: 240;
+      height: 320;
+    } */
+
+    span {
+      text-align: center;
+    }
 
     .pie-de-pagina {
       display: flex;
@@ -385,13 +476,6 @@ h5 {
     align-content: center;
     text-align: center;
     }
-    
-    #contenido {
-      text-align: left;
-    }
-    .contenedor-cards {
-      gap: 10px;
-    }
 
     .botones-footer {
       display: flex;
@@ -401,60 +485,6 @@ h5 {
       padding-top: 20px;
       padding-bottom: 20px;
       gap: 10px;
-    }
-
-     .contenedor-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      /* display: flex;
-      flex-wrap: wrap;
-      flex-direction: column; */
-      padding-top: 10px;
-      gap: 5px;
-    
-  
-    }
-
-    .contenedor-grid-nosotros {
-      display: grid;
-      grid-auto-flow: column;
-      padding-top: 10px;
-    
-      grid-template-columns: 1fr;
-      grid-template-rows: auto 1fr;
-       
-    }
-
-    /* #item2 {
-      IDEA para arreglar mobile:  Poner un src con tamaño especifico: url("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5582691124673!2d-58.409251585232134!3d-34.6406015669567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6e15b933ab%3A0xce79224171341e5b!2sSede%20del%20Gobierno%20de%20la%20Ciudad!5e0!3m2!1ses!2sar!4v1635622642422!5m2!1ses!2sar" <width="350" height="600" style="border:0;" allowfullscreen="" loading="lazy">)
-    } */
-
-    /* .item-grid {
-      display: grid;
-      padding-top: 10px;  
-      grid-template-columns: 1fr;
-     
-    } */
-
-    #form ol li label{
-      width: 30%;
-      float:left;
-      text-align:left;
-    }
-
-    /* #item1 {
-
-    } Corresponde al formulario HTML */
-      
-    
-
-    #item2 { /* Corresponde al iframe de GoogleMaps */
-      width: 240;
-      height: 320;
-    }
-
-    span {
-      text-align: center;
     }
 
 }
