@@ -2,6 +2,7 @@
 
 .animate__animated.animate__bounce {
   --animate-duration: 2s;
+  
 }
 
 * {
@@ -109,7 +110,7 @@ h5 {
   background-repeat: no-repeat;
   width: 100%;
   height: 30rem;
-  padding-top: 5px;
+  padding: 10px;
 }
 
 /* en estas clases, cambiar formatos del texto en los puntos de corte */
@@ -139,12 +140,22 @@ h5 {
   grid-column-end: 4;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr;
+  gap: 10px;
   
+}
+#item1,
+#item2,
+#item3,
+#item4 {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+ 
 }
 
 .contenedor-grid-nosotros {
   display: grid;
-  padding-top: 10px;
+  padding: 10px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-template-columns: 1fr 1fr;
@@ -229,9 +240,10 @@ ul li {
 .iconos-social {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   font-size: large;
   text-align: center;
+  align-items: center;
   
 }
 
@@ -316,9 +328,10 @@ ul li {
 
 /* Puntos de corte responsive Mobile y Tablet */
 
-@media (min-width: 641px) and (max-width: 768px) {
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1080px) {
   
-  .titulo-logo {
+.titulo-logo {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -327,14 +340,15 @@ ul li {
   justify-content: center;
   padding: 20px;
   margin-top: 20px;
-  }
+}
 
 .contenedor-grid {
   display: grid;
-  padding-top: 10px;
+  padding: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
-  gap: 5px;
+  gap: 10px;
+
 
 }
 
@@ -353,11 +367,17 @@ ul li {
   text-align: center;
  
 }
+/* Experimento
 
-  
+fieldset #form {
+  display: flex;
+  flex-wrap: wrap;
+}
+  */
 }
 
-@media (min-width: 240px) and (max-width: 640px){
+/* Mobile */
+@media (min-width: 240px) and (max-width: 640px) {
       
   .nav{ 
       display: flex;
@@ -410,20 +430,20 @@ ul li {
      .contenedor-grid {
       display: grid;
       grid-template-columns: 1fr;
-      /* display: flex;
-      flex-wrap: wrap;
-      flex-direction: column; */
-      padding-top: 10px;
+      
+      padding: 10px;
       gap: 5px;
     
     }
 
     .contenedor-grid-nosotros {
       display: grid;
+      grid-auto-columns: auto;
       grid-auto-flow: column;
-      padding-top: 10px;
-      grid-template-columns: 1fr;
+      padding: 10px;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto 1fr;
+      gap: 10px;
        
     }
 
@@ -440,6 +460,8 @@ ul li {
       align-content: center;
       justify-items: center;
       text-align: center;
+      grid-auto-columns: auto;
+      grid-auto-flow: column;
      
     }
 
