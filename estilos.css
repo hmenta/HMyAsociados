@@ -284,9 +284,9 @@ ul li {
 
 /* Estilos formulario */
 
-.col-auto {
+/* .col-auto {
   text-align: center;
-}
+} */
 
 /* Estilos del formulario */
 
@@ -314,6 +314,7 @@ ul li {
   text-align:left;
 }
 #form input {
+  display: inline-block;
   border:1px solid whitesmoke;
 }
 #form input[type="submit"] {
