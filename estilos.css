@@ -141,8 +141,15 @@ h5 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr;
   gap: 10px;
+ 
+}
+
+.item-grid {
+  padding: 10px;
+  background-color: lightgray;
   
 }
+
 #item1,
 #item2,
 #item3,
@@ -163,18 +170,12 @@ h5 {
    
 }
 
-.item-grid {
-  padding: 10px;
-  background-color: lightgray;
-  
-}
-
 .contenedor {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   background-color: lightsteelblue;
-  padding: 20px;
+  padding: 10px;
   font-weight: bold;
   color: black;
   margin: 2px;
@@ -217,6 +218,7 @@ ul li {
 
 }
 
+/* Estilos del footer y redes sociales */
 .pie-de-pagina {
   display: flex;
   flex-wrap: wrap;
@@ -227,13 +229,12 @@ ul li {
   color: white;
   margin: 2px;
   border-color: grey;
-  padding: 20px;
+  padding: 5px;
 }
 
 #redes-sociales {
   justify-content: left;
-  padding: 20px;
-  
+  padding: 10px;
 
 }
 
@@ -282,18 +283,19 @@ ul li {
   text-align: left;
 }
 
-/* Estilos formulario */
-
-/* .col-auto {
-  text-align: center;
-} */
 
 /* Estilos del formulario */
 
+h3 {
+text-align: left;
+}
+
 #form {
+  
   border:1px solid white;
   padding: 10px;
   margin: 10px;
+  
 }
 /* #form legend{  //para el caso de querer utilizarlo// 
   font-weight:bold;
@@ -350,7 +352,6 @@ ul li {
   grid-template-rows: auto 1fr;
   gap: 10px;
 
-
 }
 
 .item-grid {
@@ -366,15 +367,18 @@ ul li {
   align-content: center;
   justify-items: center;
   text-align: center;
+  align-items: center;
  
 }
-/* Experimento
+/* Experimento   */
 
 fieldset #form {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+
 }
-  */
+
 }
 
 /* Mobile */
@@ -472,17 +476,6 @@ fieldset #form {
       text-align:left;
     }
 
-    /* #item1 {
-
-    } Corresponde al formulario HTML */
-      
-    
-  
-    /* #item2 { /* Corresponde al iframe de GoogleMaps
-      width: 240;
-      height: 320;
-    } */
-
     span {
       text-align: center;
     }
@@ -490,7 +483,6 @@ fieldset #form {
     .pie-de-pagina {
       display: flex;
     }
-
 
     .iconos-social {
     display: flex;
