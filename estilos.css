@@ -370,16 +370,24 @@ text-align: left;
   align-items: center;
  
 }
-/* Experimento   */
+  
+.contenedor-grid-nosotros {
+display: inline-grid;
+padding: 10px;
+grid-template-columns: auto 1fr;
+grid-template-rows: auto 1fr;
+gap: 10px;
 
+}
+  
+/* Experimento   
 fieldset #form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
-}
+}*/
 
-}
 
 /* Mobile */
 @media (min-width: 240px) and (max-width: 640px) {
