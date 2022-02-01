@@ -4,91 +4,89 @@
         <meta charset='utf-8'>
         <html lang="es">
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Illumina Academy</title>
-        <link rel="icon" href="img/birrete_black_24dp.png">
+        <title>HM Consultores</title>
+        <link rel="icon" href="img/building.svg">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='estilos.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script src="https://kit.fontawesome.com/fcc6ab1115.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     </head>
 
-<body>
+
 
     
 <header>
 
     <div class="titulo-logo">
-        <i class="far fa-lightbulb" style="font-size: 50px; color: lightskyblue; padding: 20px"></i>
-        <h1 class="animate__animated animate__bounce"> Illumina Academy </h1>
+        <i class="fas fa-chart-line" style="font-size: 50px; color: lightskyblue; padding: 20px"></i>
+        <h1 class="animate__animated animate__bounce"> HM Consultores y Asociados </h1>
         
     </div>
 
     <nav>
     <div class="nav">
-        <span><a href="index.html" id="menu-nav">Presentación</a></span>
-        <span><a href="cursos.html" id="menu-nav">Cursos</a></span>
-        <span><a href="nosotros.html" id="menu-nav">Sobre Nosotros</a></span>
+        <span><a href="index.html" id="menu-nav">Nuestros Servicios</a></span>
+        <span><a href="equipo.html" id="menu-nav">Quiénes somos</a></span>
+        <span><a href="contacto.html" id="menu-nav">Contáctenos</a></span>
        
         </div>
     </nav>
   
 </header>
 
+<body>
+
         <div class="banner-bienvenida">
-            <div class="imagen-bienvenida">
+            <div class="imagen-bienvenida" class="img-fluid" alt="img Bienvenida">
             <div class="texto-bienvenida">
-                Formación con calidad académica a tu alcance
+                Nuevas claves para su empresa
             </div>
         </div>
 
-        <div class="contenedor-grid">
+        <!-- Cards de Bootstrap para describir servicios-->
+
+    <div class="contenedor-cards">
+
         
-            <div class="item-grid" id="item1">
-                <img src="img/university-campus.jpg" style="width: 18rem; height: 15rem">
-                <!-- <i class="fas fa-user-graduate" style="text-align: center; font-size: 50px; color: lightslategrey; padding: 10px"></i> -->
-                    <div id="contenido-titulo">
-                        Capacitacion Virtual
-                    </div>
-                    <div id="contenido">
-                        Ofrecemos cursos y programas dirigidos por profesores destacados en cada campo,  
-                        los cuales pueden ser realizados de forma independiente y on-line; a tu propio ritmo,  
-                        sin compromiso de permanencia y bajo las plataformas más utilizadas en la educación a distancia.
-                    </div>
+        <div class="card" style="width: 18rem;">
+            <img src="img/reunion.jpg" class="card-img-top" alt="Reunión de trabajo">
+            <h5 class="card-title">Recursos Humanos</h5>
+            <div class="card-body">
+              <p class="card-text">Creemos que las personas son la clave del éxito de cualquier organización, por este motivo diseñamos y gestionamos todas las actividades necesarias para motivar y alinear a los colaboradores detrás de la visión establecida.</p>
             </div>
-            
-            <div class="item-grid" id="item2">
-                <img src="img/Compass.jpg" style="width: 18rem; height: 15rem">
-                <!-- <i class="far fa-compass" style="font-size: 50px; color: lightslategray; padding: 10px"></i>  -->
-                <div id="contenido-titulo">Nuestra Misión</div>
-                <div id="contenido">
-                    Proporcionar capacitación en diversas áreas del conocimiento con calidad académica y 
-                    perspectiva de aplicación práctica inmediata.</div>
-            </div>
-            
-            <div class="item-grid" id="item3">
-                <img src="img/propuesta.jpg" style="width: 18rem; height: 15rem">
-                <!-- <i class="fas fa-users" style="font-size: 50px; color: lightslategrey; padding: 10px"></i>  -->
-                <div id="contenido-titulo">¿Quiénes pueden cursar?</div>
-                <div id="contenido">
-                    Nuestros programas están dirigidos a quienes no disponen de tiempo para realizar un 
-                    cursado regular presencial y desean aprender acerca de los temas propuestos.
-                </div>
-            </div>
-
-
-            <div class="item-grid" id="item4"> 
-                <img src="img/tablero-kanban.jpg" style="width: 18rem; height: 15rem">   
-                <!-- <i class="fas fa-school" style="font-size: 50px; color: lightslategrey; padding: 10px"></i>  -->
-                <div id="contenido-titulo">Objetivos</div>
-                <div id="contenido">
-                    El objetivo pedagógico está centrado en el aprendizaje significativo del alumno para que incorpore
-                    nuevos conocimientos como complemento a su educación formal, vocación u oficio.  
-                </div>
-            </div>
-
         </div>
 
+        
+        <div class="card" style="width: 18rem;">
+            <img src="img/pexels-justice.jpg" class="card-img-top" alt="Legales">
+            <h5 class="card-title">Asuntos Legales</h5>
+            <div class="card-body">
+                <p class="card-text">En nuestro equipo contamos con abogados senior dedicados a anticipar y responder cualquier inquietud en el área de la justicia para minimizar riesgos y costos ocultos.</p>
+            </div>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;">
+            <img src="img/pexels-analytics.jpg" class="card-img-top" alt="Data">
+            <h5 class="card-title">Data & Analytics</h5>
+            <div class="card-body">
+                <p class="card-text">Exploramos la información de sus actividades y le ayudamos a disponer de los datos procesados con el mayor rigor estadístico, de manera ordenada y oportuna,  para que tome las mejores decisiones.
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;">
+            <img src="img/company-pixabay-640.jpg" class="card-img-top" alt="Reunión de trabajo">
+            <h5 class="card-title">Seguridad e Higiene</h5>
+            <div class="card-body">
+                <p class="card-text">Realizamos el análisis de las medidas de protección de sus colaboradores y los procedimientos para ganar la máxima eficiencia y hacer de su establecimiento fabril un modelo para certificar diversas normas.</p>
+            </div>
+        </div>
+
+    
         
     </div>
 
@@ -121,8 +119,8 @@
            <h3>¡Me interesa!</h3> 
                    
                <div class="botones-footer">
-                   <a target="_blank" class="button" href="cursos.html">Ver cursos</a>  
-                   <a target="_blank" class="button" href="nosotros.html">+Info</a>  
+                   <a target="_blank" class="button" href="equipo.html">Quiénes son?</a>  
+                   <a target="_blank" class="button" href="contacto.html">+Info</a>  
                    
                </div>
 
@@ -142,7 +140,7 @@
     </div>
    
    <div>
-       <h6> Copyright 2021, Hernán Mentasti @CodoACodo4.0 ; Buenos Aires, Argentina. </h6>
+       <h6> Copyright 2022, Hernán Mentasti @HM_Consultores_y_Asoc ; Buenos Aires, Argentina. </h6>
    </div>           
    
 </footer>

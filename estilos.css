@@ -26,10 +26,10 @@ h6 {
 }
 
 h5 {
-  text-align: left;
+  text-align: center;
   font-size: medium;
-  font-weight: bold;
-  
+  font-weight: bolder;
+  padding: 10px;
 }
 
 .titulo-logo {
@@ -60,6 +60,17 @@ h5 {
 
 }
 
+.card-title {
+  text-align: center;
+  color: darkcyan;
+  
+}
+
+.card-body {
+  text-align: justify;
+  color: black;
+}
+
 #menu-nav {
   color: white;
   font-weight: bold;
@@ -87,7 +98,7 @@ h5 {
 }
 
 .imagen-bienvenida {
-  background-image: url("img/inicio.jpg");
+  background-image: url("img/llave.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -116,7 +127,7 @@ h5 {
 /* en estas clases, cambiar formatos del texto en los puntos de corte */
 
 .texto-bienvenida {
-  background-color: goldenrod;
+  background-color: lightseagreen;
   padding: 20px;
   margin-top: 160px;
   margin-left: 30px;
@@ -126,7 +137,7 @@ h5 {
   position: sticky;
   top: 100px;
   text-align: center;
-  color: black;
+  color: white;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 10px;
@@ -135,9 +146,9 @@ h5 {
 
 .contenedor-grid {
   display: grid;
-  padding-top: 10px;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  padding: 10px;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr;
   gap: 10px;
@@ -208,9 +219,8 @@ ul li {
   text-align: left;
 }
 
-.contenedor-cards { /*Estilo de clase de la pagina cursos*/
+.contenedor-cards { /*Estilo de clase cards de frame bootstrap*/
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
   padding-top: 30px;
