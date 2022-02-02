@@ -76,6 +76,7 @@ h5 {
   font-weight: bold;
   text-decoration-line: none;
   padding: 20px;
+  
 }
 
 #menu-nav:hover {
@@ -126,7 +127,7 @@ h5 {
 
 /* en estas clases, cambiar formatos del texto en los puntos de corte */
 
-.texto-bienvenida {
+.texto-bienvenida {  /* Texto movible de cada página */
   background-color: lightseagreen;
   padding: 20px;
   margin-top: 160px;
@@ -137,9 +138,9 @@ h5 {
   position: sticky;
   top: 100px;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: bolder;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
@@ -221,11 +222,15 @@ ul li {
 
 .contenedor-cards { /*Estilo de clase cards de frame bootstrap*/
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-trim: 20px;
 
+}
+
+.card-body {
+  text-align: justify;
 }
 
 /* Estilos del footer y redes sociales */
