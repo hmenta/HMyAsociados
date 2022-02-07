@@ -55,7 +55,7 @@ h5 {
   font-weight: bold;
   border-end-end-radius: 50px;
   border-end-start-radius: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   width: auto;
 
 }
@@ -104,7 +104,7 @@ h5 {
   background-repeat: no-repeat;
   width: 100%;
   height: 40rem;
-  padding-top: 5px;
+  padding-top: 1px;
 }
 
 .imagen-bienvenida-cursos {
@@ -124,6 +124,24 @@ h5 {
   height: 30rem;
   padding: 10px;
 }
+
+/* Exclusivo estilos Bootstrapp footer */
+
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
 
 /* en estas clases, cambiar formatos del texto en los puntos de corte */
 
