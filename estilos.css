@@ -91,6 +91,12 @@ h5 {
 
 }
 
+.nav-item:hover {
+  background-color: lightskyblue;
+  color: black;
+
+}
+
 .banner-bienvenida {
   display: flex;
   flex-direction: column;
@@ -107,24 +113,27 @@ h5 {
   background-image: url("img/llave.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 40rem;
   padding-top: 1px;
 }
 
-.imagen-bienvenida-cursos {
-  background-image: url("img/propuesta.jpg");
+.imagen-bienvenida-nosotros {
+  background-image: url("img/reunion.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 30rem;
   padding-top: 5px;
 }
 
-.imagen-bienvenida-nosotros {
-  background-image: url("img/startup-nosotros-1920.jpg");
+.imagen-bienvenida-contacto {
+  background-image: url("img/contacto-girl.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 30rem;
   padding: 10px;
@@ -254,6 +263,11 @@ ul li {
 
 .card-body {
   text-align: justify;
+}
+
+.card-img-top {
+  text-align: center;
+  
 }
 
 /* Estilos del footer y redes sociales */
